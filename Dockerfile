@@ -32,7 +32,7 @@ ARG ARG_GITHUB_TOKEN
 ENV GITHUB_ACTOR=${ARG_GITHUB_ACTOR} \
     GITHUB_TOKEN=${ARG_GITHUB_TOKEN}
 
-COPY ./integrations /build
+COPY --chown=circleci:circleci ./integrations /build
 WORKDIR /build
 
 RUN ./gradlew assembleDebug
