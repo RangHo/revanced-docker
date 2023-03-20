@@ -1,9 +1,12 @@
 [submodule "cli"]
 	path = cli
 	url = https://github.com/revanced/revanced-cli
+        branch = main
 [submodule "patches"]
 	path = patches
 	url = https://github.com/revanced/revanced-patches
+        branch = main
 [submodule "integrations"]
 	path = integrations
 	url = https://github.com/revanced/revanced-integrations
+        branch = main
